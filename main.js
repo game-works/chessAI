@@ -1,10 +1,10 @@
 seekjs.config({
-	ns: {
-		"util.": "/utils/"
-	},
 	alias:{
 		ajax: "/utils/ajax.js"
-	}	
+	},
+	ns: {
+		util: "/utils/"
+	}
 });
 
 var app = require("sys.app");
