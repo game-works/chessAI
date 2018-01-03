@@ -1,0 +1,16 @@
+<div class="home">
+    <table>
+        {for row in 1 to 10}
+        <tr>
+            {for col in 1 to 9}
+            <% let ele = this.element.find(x => x.row == row && x.col == col); %>
+            {if ele}
+            <td class="{ele.color}">{ele.name}</td>
+            {else}
+            <td class="gray">{row.toString(16)}{col}</td>
+            {/if}
+            {/for}
+        </tr>
+        {/for}
+    </table>
+</div>

@@ -1,23 +1,28 @@
 {
   "name": "chess-ai",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "象棋AI",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/likaituan/chessAI.git"
+    "start": "node server",
+    "build": "node build/build"
   },
   "author": "Li",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/likaituan/chessAI/issues"
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "html-webpack-plugin": "^2.30.1",
+    "seek-loader": "^1.0.6",
+    "seekjs": "file:../../seekjs/seekjs",
+    "webpack": "^2.6.1",
+    "webpack-dev-middleware": "^2.0.3",
+    "webpack-hot-middleware": "^2.21.0"
   },
-  "homepage": "https://github.com/likaituan/chessAI#readme",
   "dependencies": {
-    "seekjs": "2.1.3",
-    "seekjs-plugin-dialog": "1.0.8"
+    "express": "^4.16.2",
+    "ifun": "^0.3.0"
   }
 }

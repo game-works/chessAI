@@ -1,0 +1,19 @@
+td {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+td.gray {
+    color: #ccc;
+}
+
+td.black {
+    color: black;
+}
+
+td.red {
+    color: red;
+}
